@@ -1,7 +1,7 @@
-public class Binarios {
+public class Binario {
 
-    public void convertirBinario(int numero){
-        int digito, exponente = 0;
+    public void convertirBinario(int numeroIni){
+        int numero = numeroIni, digito, exponente = 0;
         double  binario = 0;
 
         while (numero != 0) {
@@ -11,6 +11,6 @@ public class Binarios {
             numero = numero / 2;
         }
 
-        System.out.println("La conversión de "+ numero +" a Binario es: "+ binario);
+        System.out.printf("La conversión del numero "+ numeroIni +" a Binario es: %.0f %n", binario);
    }
 }
