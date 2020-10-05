@@ -1,6 +1,6 @@
 public class Binario {
 
-    public void convertirBinario(int numeroIni){
+    public void decimalBinario(int numeroIni){
         int numero = numeroIni, digito, exponente = 0;
         double  binario = 0;
 
@@ -10,7 +10,6 @@ public class Binario {
             exponente ++;
             numero = numero / 2;
         }
-
-        System.out.printf("La conversión del numero "+ numeroIni +" a Binario es: %.0f %n", binario);
+        System.out.printf("\nLa conversión del numero "+ numeroIni +" a Binario es: %.0f %n", binario);
    }
 }
