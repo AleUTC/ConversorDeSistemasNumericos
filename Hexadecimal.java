@@ -1,7 +1,6 @@
 public class Hexadecimal {
 
-    public  void decimalHexadecimal(int numeroIni) {
-        int numero = numeroIni;
+    public  String decimalHexadecimal(int numeroIni) {
         String hexadecimal = "";
         String caracteresHexadecimales = "0123456789ABCDEF";
         while (numeroIni > 0) {
@@ -10,6 +9,7 @@ public class Hexadecimal {
             numeroIni /= 16;
         }
         //System.out.println("\nLa conversión del numero "+ numero +"Decimal a Hexadecimal es: "+ hexadecimal);
-        System.out.println("Hexadecimal: "+ hexadecimal);
+
+        return hexadecimal;
     }
 }

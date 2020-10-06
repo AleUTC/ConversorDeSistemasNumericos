@@ -1,7 +1,7 @@
 public class Octal {
 
-    public void decimalOctal(int numeroIni){
-
+    public int decimalOctal(int numeroIni){
+        //int numero = num;
         String octal = "";
         String caracteresOctales = "01234567";
 
@@ -10,6 +10,9 @@ public class Octal {
             octal = (caracteresOctales.charAt(residuo) + octal);
             numeroIni /= 8;
         }
-        System.out.println("\nLa conversión del numero "+ numeroIni +" a Octal es: "+ octal);
+        //System.out.println("\nLa conversión del numero "+ numeroIni +"Decimal a Octal es: "+ octal);
+        //System.out.println("Octal: "+ octal);
+        return Integer.parseInt(octal);
     }
+
 }
