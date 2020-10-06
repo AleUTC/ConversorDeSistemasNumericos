@@ -21,14 +21,17 @@ public class Principal {
                 case 2://Menu Binario
                     Menu menu_2 = new Menu();
                     menu_2.menuBinario();
+                    break;
 
                 case 3://Menu Octal
                     Menu menu_3 = new Menu();
                     menu_3.menuOctal();
+                    break;
 
                 case 4://Menu Hexadecimal
-                Menu menu_4 = new Menu();
-                menu_4.menuHexadecimal();
+                    Menu menu_4 = new Menu();
+                    menu_4.menuHexadecimal();
+                break;
 
                 default:
                     System.out.println("Opcion invalida, intenta de nuevo");
@@ -38,5 +41,6 @@ public class Principal {
             continuar = sc.nextInt();
         } while (continuar !=  0);
 
+        System.out.println("Gracias por utilizar este programa, chao!");
     }
 }
