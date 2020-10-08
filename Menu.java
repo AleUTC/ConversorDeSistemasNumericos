@@ -119,7 +119,7 @@ public class Menu {
             hexadecimal = base_16.decimalHexadecimal(decimal);
             System.out.println("Hexadecimal: "+ hexadecimal);
 
-            System.out.println("\n\nDeseas realizar otra conversion de: \n\tDecimal -> Binario \n\tDecimal -> Octal \n\tDecimal -> Hexadecimal\n\nSi presiona (1) || No presiona (0)");
+            System.out.println("\n\nDeseas realizar otra conversion de: \n\tOctal -> Binario \n\tOctal -> Decimal \n\tOctal -> Hexadecimal\n\nSi presiona (1) || No presiona (0)");
             continuar = sc.nextInt();
         } while (continuar !=  0);
     }
@@ -135,24 +135,24 @@ public class Menu {
 
             System.out.println("\nLa conversion del numero "+ numeroHexa +" es:\n");
 
-            //Octal -> Decimal
+            //Hexadecimal -> Decimal
             Decimal base_10 = new Decimal();
             hexadecimal = base_10.hexadecimalDecimal(numeroHexa);
             System.out.println("Decimal: "+ hexadecimal);
 
-            //Octal -> Binario
+            //Hexadecimal -> Binario
             Binario base_2 = new Binario();
             binario = (int)base_2.decimalBinario(hexadecimal);
             System.out.println("Binario: "+ binario);
 
-            //Octal -> Octal
+            //Hexadecimal -> Octal
             Octal base_8 = new Octal();
             octal = base_8.decimalOctal(hexadecimal);
             System.out.println("Octal: "+ octal);
 
 
 
-            System.out.println("\n\nDeseas realizar otra conversion de: \n\tDecimal -> Binario \n\tDecimal -> Octal \n\tDecimal -> Hexadecimal\n\nSi presiona (1) || No presiona (0)");
+            System.out.println("\n\nDeseas realizar otra conversion de: \n\tHexadecimal -> Binario \n\tHexadecimal -> Octal \n\tHexadecimal -> Decimal\n\nSi presiona (1) || No presiona (0)");
             continuar = sc.nextInt();
         } while (continuar !=  0);
     }
